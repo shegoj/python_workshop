@@ -1,0 +1,28 @@
+<App>
+   <name>CounterApp</name>
+   <version>1.0</version>
+   <servers>APP1,APP2,App3</servers>
+   <provider>local</provider>
+   <configs>
+      <config>
+       <config-name>database_place-holder</config-name>
+       <config-value>mysql:database</config-value>
+      </config>
+      <config>
+       <config-name>database_connection_pool_value</config-name>
+       <config-value>30</config-value>
+      </config>
+    </configs>
+   <dependencies>
+      <dependecy>
+       <app-dep>JDK<app-dep>
+       <app-version>2.0</app-version>
+       <provider>yum </provider>
+   </dependencies>
+</App>
+
+
+## app should connect to mysql database and connection string should be read from config 
+
+
+http://cloudacademy.com/blog/boto-python-automate-aws-services/

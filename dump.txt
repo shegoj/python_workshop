@@ -1,0 +1,57 @@
+<App>
+   <name>CounterApp</name>
+   <version>1.0</version>
+   <servers>APP1,APP2,App3</servers>
+   <provider>local</provider>
+   <configs>
+      <config>
+       <config-name>database_place-holder</config-name>
+       <config-value>mysql:database</config-value>
+      </config>
+      <config>
+       <config-name>database_connection_pool_value</config-name>
+       <config-value>30</config-value>
+      </config>
+    </configs>
+   <dependencies>
+      <dependecy>
+       <app-dep>JDK<app-dep>
+       <app-version>2.0</app-version>
+       <provider>yum </provider>
+   </dependencies>
+</App>
+
+
+## app should connect to mysql database and connection string should be read from config 
+
+
+http://cloudacademy.com/blog/boto-python-automate-aws-services/
+
+{"race":{"Africa":"black", "Europe":"white"}}
+
+{"name":"Google","location":{"street":"1600 Amphitheatre Parkway","city":"Mountain View","state":"California","country": "US"},"employees":[{"name":"Michael","division":"Engineering"},{"name":"Laura","division":"HR"},{"name":"Elise","division":"Marketing"}]}'
+
+https://docs.python.org/2/
+
+http://samples.openweathermap.org/data/2.5/weather?q=London,uk&appid=b1b15e88fa797225412429c1c50c122a1
+
+
+"http://maps.googleapis.com/maps/api/distancematrix/json?origins=da162bs&destinations=$e162rx&mode=driving&language=en-EN&sensor=false";
+
+mixing it all up////
+
+
+1] how many files to do you have in your home directory.?
+2] test if a web link is valid.. only accept https and http. display a nice error message if link  does not start with https or http.
+
+
+3) selective copy.. and only copy if the version is new.
+4) find files older than x days and bigger than y size, and delete them...
+
+5) script to test list of weblinks and email status to you very x minutes
+
+
+1) compute distance between two postcodes... show distance when walking,driving or using a bicycle.
+2)  do it like a web thing
+3) send emails every 30 minutes to see who is using your service
+4) do a daily report in PDF of above.

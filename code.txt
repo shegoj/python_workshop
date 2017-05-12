@@ -1,0 +1,52 @@
+
+============ LABEL 1 ======================== (label1.py)
+
+#!/bin/python
+
+_name=raw_input('WHAT IS YOUR NAME? ')
+print 'Hello', _name, ', welcome to the workshop'
+
+
+
+============ LABEL 2 ======================== (label1.py)
+
+#!/bin/python
+
+import sys
+
+_name = sys.argv[1]
+print 'Hello', _name, ', welcome to the workshop'
+
+
+============ LABEL 3 ======================== (label3.py)
+
+#!/bin/python
+# script written by Olu for ags_technology training
+# all rights reserved
+# 11/05/2017
+
+import sys
+
+def cal_interest (p,t,r):
+        return p*t*r/100
+
+if __name__ == '__main__':
+        interest = cal_interest (float(sys.argv[1]), int(sys.argv[2]), float(sys.argv[3]))
+        print "Interest is calculated as %0.2f percent " % interest
+
+
+
+
+
+
+
+
+#Todo
+label2
+display utility usage and guard for errors.. e.g. user deos not provide an argument when executing the script
+label3
+Improve the output to display princial, time and rate, and the calculated interest.
+append to data.tx instead of overwriting
+write every computed interest to the database (mysql)
+
+

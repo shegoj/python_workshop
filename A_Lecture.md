@@ -123,7 +123,7 @@ Ensure the following is installed and working
 
 #### Write every computed data to disk --- P=50 t=2 r=15 I=20.0
     create a file label4.py . Copy content of  LABEL 4 from code.txt
-    (./label4.py p50 2 15)
+    (./label4.py 50 2 15)
     open data.txt
 
 ### Task 4. String,list, dict and files. 
@@ -151,7 +151,7 @@ Ensure the following is installed and working
 
 #### use a loop to iterate over the elements
     for iterator_  in "ec2-user: x :1000:1000:Cloud user:/home/ec2-user:/bin/bash".split(':'):
-    	print iterator_;
+    	print iterator_
 
 ### Task 5. woorking with files.
 - open /etc/passwd file and display all the records in there

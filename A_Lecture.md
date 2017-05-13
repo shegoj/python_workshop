@@ -176,7 +176,7 @@ Ensure the following is installed and working
 
 
 
-### Task 5. More on Interacting with Linux Apps and Files.
+### Task 6. More on Interacting with Linux Apps and Files.
 
 - display ALL os envrionment variables
 - Now display ALL of them as 'key', 'value'

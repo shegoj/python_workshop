@@ -192,7 +192,7 @@ Ensure the following is installed and working
 #### Now display ALL of them as 'key', 'value'
     >>> import os
     >>> for k, v in os.environ.items():
-    ...     print "%s=%s" % (k, v)
+                print "%s=%s" % (k, v)
 
 
 #### display 'hostname' variable value

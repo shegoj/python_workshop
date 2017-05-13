@@ -66,12 +66,16 @@ if __name__ == '__main__':
 
 
 
-#Todo
-label2
+#Tasks
+
+LABEL-2
 display utility usage and guard for errors.. e.g. user deos not provide an argument when executing the script
-label3
+
+LABEL-3
 Improve the output to display princial, time and rate, and the calculated interest.
-append to data.tx instead of overwriting
-write every computed interest to the database (mysql)
+append to data.txt instead of overwriting
+
+LABEL-4
+write every computed interest to a database table, instead of a file (mysql)
 
 

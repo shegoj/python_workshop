@@ -128,15 +128,15 @@ Ensure the following is installed and working
 
 ### Task 4. String,list, dict and files. 
 
-- split string ("ec2-user:x:1000:1000:Cloud user:/home/ec2-user:/bin/bash") into list using ":" as delimiter. The display the list. Do this in Python prompt
+- split string ("ec2-user: x :1000:1000:Cloud user:/home/ec2-user:/bin/bash") into list using ":" as delimiter. The display the list. Do this in Python prompt
 - display first and last elements of the list.  
 - replace the third element of the list with '000000000' and check that has successfully been replaced.
-- again using string ("ec2-user:x:1000:1000:Cloud user:/home/ec2-user:/bin/bash"), and  ":" as a delimiter,use a loop to iterate over the elements
+- again using string ("ec2-user: x :1000:1000:Cloud user:/home/ec2-user:/bin/bash"), and  ":" as a delimiter,use a loop to iterate over the elements
 
 
 
-#### split string ("ec2-user:x:1000:1000:Cloud user:/home/ec2-user:/bin/bash") into list using ":" as delimiter. ....
-    user_info="ec2-user:x:1000:1000:Cloud user:/home/ec2-user:/bin/bash".split(':')
+#### split string ("ec2-user: x :1000:1000:Cloud user:/home/ec2-user:/bin/bash") into list using ":" as delimiter. ....
+    user_info="ec2-user: x :1000:1000:Cloud user:/home/ec2-user:/bin/bash".split(':')
     user_info
 
 #### display first and last elements of the list.
@@ -150,7 +150,7 @@ Ensure the following is installed and working
 
 
 #### use a loop to iterate over the elements
-    for iterator_  in "ec2-user:x:1000:1000:Cloud user:/home/ec2-user:/bin/bash".split(':'):
+    for iterator_  in "ec2-user: x :1000:1000:Cloud user:/home/ec2-user:/bin/bash".split(':'):
     	print iterator_;
 
 ### Task 5. woorking with files.

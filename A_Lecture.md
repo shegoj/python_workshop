@@ -166,7 +166,7 @@ Ensure the following is installed and working
     		print line
 
 #### open /etc/passwd file and display all the records in there
-   >>> with open ('/etc/passwd','r') as f:
+    with open ('/etc/passwd','r') as f:
     ...	for line in f:
     		 if ( line.split(':') [0] == 'ec2-user'):
     		 	print line

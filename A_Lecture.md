@@ -153,7 +153,7 @@ Ensure the following is installed and working
     for iterator_  in "ec2-user: x :1000:1000:Cloud user:/home/ec2-user:/bin/bash".split(':'):
     	print iterator_
 
-### Task 5. woorking with files.
+### Task 5. working with files.
 - open /etc/passwd file and display all the records in there
 - display only record that matches ec2-user record
 - Now write this as a complete script which accepts user-id , and display the user-id,name and home direcotry, if a match is found

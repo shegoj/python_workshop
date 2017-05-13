@@ -69,11 +69,11 @@ if __name__ == '__main__':
 #Tasks
 
 LABEL-2
-display utility usage and guard for errors.. e.g. user deos not provide an argument when executing the script
+display utility usage . Also, the script more robust by taking care of possible errors.. e.g. if user deos not provide an argument when executing the script
 
 LABEL-3
 Improve the output to display princial, time and rate, and the calculated interest.
-append to data.txt instead of overwriting
+Append output to data.txt instead of overwriting
 
 LABEL-4
 write every computed interest to a database table, instead of a file (mysql)

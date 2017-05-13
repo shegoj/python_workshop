@@ -213,9 +213,9 @@ We have looked at basics of Python Language. We shall now be using it to perform
 
 
 
-#Todo [ For next class]
-Adapt email.py script to send and email to your account. Also improve it to send  accept "send to address" 
-Improve the script to send an attachment if one is provided.
+##Todo [ For next class]
+- Adapt email.py script to send and email to your account. Also improve it to send  accept "send to address" 
+- Improve the script to send an attachment if one is provided.
 
 
 

@@ -1,6 +1,6 @@
 # Python For Linux Admin
 
-You have been asked to create a couple of utility tools in Python ( mixed with Bash) to make you life as a Linux Admin a lot easier. You will be using Python 2.x running on Linux
+You have been asked to create a couple of utility tools in Python ( mixed with Bash) to make your life as a Linux Admin a lot easier. You will be using Python 2.x running on Linux
 .
 Some of the solutions you will be creating include
 

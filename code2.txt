@@ -1,0 +1,130 @@
+==========================Label 1=================================================
+mkdir /tmp/dump/old
+mkdir ~/logging && cd ~/loggging
+dd if=/dev/zero of=app.txt bs=1024 count=0 seek=$[1024*10]
+dd if=/dev/zero of=bi_access.txt bs=1024 count=0 seek=$[1024*2]
+dd if=/dev/zero of=bi_error.log bs=1024 count=0 seek=$[1024*3]
+dd if=/dev/zero of=init.log bs=1024 count=0 seek=$[1024*20]
+dd if=/dev/zero of=answer.log bs=1024 count=0 seek=$[1024*20]
+
+
+touch -d 20170101 answer.log
+touch -d 20170101 bi_access.txt
+touch -d 20170513 init.log
+
+
+
+==========================Label 2=================================================
+
+import os
+
+for file in os.listdir('/home/ec2-user/logging'):
+        print file
+
+
+==========================Label 3 ====================================
+
+
+import os
+file_paths = []  # List which will store all of the full filepaths.
+for root, directories, files in os.walk('/home/ec2-user/logging'):
+        for filename in files:
+                filepath = os.path.join(root, filename)
+                file_paths.append(filepath)  # Add it to the
+
+print file_paths
+
+
+
+==========================Label 4=================================================
+
+import os
+
+for file in os.listdir('/home/ec2-user/logging'):
+	if fnmatch.fnmatch(file, 'b_*'):
+        	print file
+
+==========================Label 5=================================================
+
+import os,shutil,fnmatch
+
+for file in os.listdir('/home/ec2-user/logging'):
+        if fnmatch.fnmatch(file, 'bi_*'):
+                print  'copying %s' % file
+                shutil.copy (file,'/tmp/dump/b_/')
+
+
+==========================Label 6=================================================
+
+import os,shutil,time
+from datetime import datetime,timedelta
+
+now = time.time()
+three_days_ago = now - (3 * 86400)
+
+path='/home/ec2-user/logging/'
+
+for file in os.listdir(path):
+        t = os.stat(str(path) + file)
+        filetime = t.st_mtime
+        #filetime = time.ctime(os.path.getmtime(os.path.join(path, file)))
+
+        if filetime < three_days_ago:
+                print "File  [ %s ] is older than 3 days  " % file
+                print  'copying %s' % file
+                shutil.copy (file,'/tmp/dump/b_/')
+
+
+===========================Label 7==========================================
+#!/bin/python
+print
+
+print "Hello World!"
+
+
+===========================Label 8 ==========================================
+
+#!/usr/bin/python
+
+print "Content-type:text/html\r\n\r\n"
+print '<html>'
+print '<head>'
+print '<title>Hello Word - First CGI Program</title>'
+print '</head>'
+print '<body>'
+print '<h2>Hello Word! This is my first CGI program</h2>'
+print '</body>'
+print '</html>'
+print
+
+
+
+
+===========================Label 9 ==========================================
+
+#!/usr/bin/python
+
+# Import modules for CGI handling
+import cgi, cgitb
+
+# Create instance of FieldStorage
+form = cgi.FieldStorage()
+
+# Get data from fields
+first_name = form.getvalue('first_name')
+
+print "Content-type:text/html\r\n\r\n"
+print "<html>"
+print "<head>"
+print "<title>Hello - Second CGI Program</title>"
+print "</head>"
+print "<body>"
+print "<form action='/cgi-bin/greetings.py' method='post' target='_blank'>"
+print "Name <input name='first_name'  />"
+print "<input type='submit' value='Send' />"
+print "</form>"
+if (len(first_name)) > 0 :
+        print "<h2>Hello %s </h2>" % (first_name)
+print "</body>"
+print "</html>"
+

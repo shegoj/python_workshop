@@ -73,7 +73,7 @@ for file in os.listdir(path):
         if filetime < three_days_ago:
                 print "File  [ %s ] is older than 3 days  " % file
                 print  'copying %s' % file
-                shutil.copy (file,'/tmp/dump/b_/')
+                shutil.copy ('/home/ec2-user/logging/' + file,'/tmp/dump/b_/')
 
 
 ===========================Label 7==========================================

@@ -52,7 +52,7 @@ import os,shutil,fnmatch
 for file in os.listdir('/home/ec2-user/logging'):
         if fnmatch.fnmatch(file, 'bi_*'):
                 print  'copying %s' % file
-                shutil.copy (file,'/tmp/dump/b_/')
+                shutil.copy ('/home/ec2-user/logging/' + file,'/tmp/dump/b_/')
 
 
 ==========================Label 6=================================================

@@ -39,10 +39,10 @@ print file_paths
 
 ==========================Label 4=================================================
 
-import os
+import os,fnmatch
 
 for file in os.listdir('/home/ec2-user/logging'):
-	if fnmatch.fnmatch(file, 'b_*'):
+	if fnmatch.fnmatch(file, 'bi_*'):
         	print file
 
 ==========================Label 5=================================================
